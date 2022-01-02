@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Footer from '../../components/footer';
 import HeroSection from '../../components/hero';
 import InfoSection from '../../components/info-section';
 import { homeObjOne, homeObjThree, homeObjTwo } from '../../components/info-section/data';
@@ -6,7 +7,7 @@ import Navbar from '../../components/navbar';
 import Services from '../../components/services';
 import Sidebar from '../../components/sidebar';
 
-const Home = () => {
+const HomePage = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => {
@@ -22,8 +23,9 @@ const Home = () => {
             <InfoSection {...homeObjTwo}/>
             <Services/>
             <InfoSection {...homeObjThree}/>
+            <Footer/>
         </>
     )
 }
 
-export default Home
+export default HomePage
